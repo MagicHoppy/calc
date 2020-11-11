@@ -11,10 +11,8 @@ function calculate(){
     let input = document.getElementById("results").textContent;
     let result;
     input = input.split(znak);
-    console.log(input);
     input[0] = Number(input[0]);
     input[1] = Number(input[1]);
-    console.log(input);
     switch(znak){
         case '+':
             result = input[0]+input[1];
@@ -45,7 +43,6 @@ function deleteCalc(){
 }
 function changeSign(){
     let inp = document.getElementById("results").innerText;
-    console.log(inp)
     if(znak==undefined){
         inp=inp*-1;
         document.getElementById("results").innerText=inp;
