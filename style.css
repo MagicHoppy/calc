@@ -1,0 +1,31 @@
+.container{
+    width: 330px;
+    height: 345px;
+    background-color: #2b2929;  
+}
+.calculator{
+    height: 500px;
+}
+#results{
+    width: 370px;
+    height: 60px;
+    font-size: 45px;
+    color: white;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.number-button{
+    width: 80px;
+    height: 55px;
+    border: none;
+    text-align: center;
+    float: left;
+    margin: 1px;
+    color: white;
+    background-color: #151515;
+    outline: none;
+}
+.number-button:hover{
+    opacity: 0.6;
+}
