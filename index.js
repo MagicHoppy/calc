@@ -4,8 +4,16 @@ function inputNumber(number){
     document.getElementById("results").innerHTML +=number;
 }
 function inputButton(z){
-    document.getElementById("results").innerHTML +=z;
-    znak = z;
+    if(document.getElementById("results").innerText==""){
+        return
+    }
+    else if(znak!==undefined){
+        return
+    }
+    else{
+        document.getElementById("results").innerHTML +=z;
+        znak = z;
+    }
 }
 function calculate(){
     let input = document.getElementById("results").textContent;
@@ -13,6 +21,9 @@ function calculate(){
     input = input.split(znak);
     input[0] = Number(input[0]);
     input[1] = Number(input[1]);
+    if(input[1]==""){
+        input[1]=input[0];
+    }
     switch(znak){
         case '+':
             result = input[0]+input[1];
