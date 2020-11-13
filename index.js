@@ -1,4 +1,3 @@
-let numbers=[];
 let znak;
 function inputNumber(number){
     document.getElementById("results").innerHTML +=number;
